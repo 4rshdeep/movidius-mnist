@@ -20,8 +20,11 @@ Run the inference version of the code to save a session that is suitable for com
     mnist_inference.data-00000-of-00001
     mnist_inference.meta
     
+Profile the model for layer-by-layer statistics about the performance of the network by running `mvNCProfile -s 12 mnist_inference.meta`
+
+
 Compile the final saved network with the following command and if it all works you should see the mnist_inference.graph file created in the current directory. Note you pass in only the weights file prefix “mnist_inference” for the -w option for a TensorFlow™ network on the compile command line. The full command is below. 
 
-```mvNCCompile mnist_inference.meta -s 12 -in input -on output -o mnist_inference.graph```
+```mvNCCompile -s 12 mnist_inference.meta```
 
 Finally run the file `run.py` to run inference.
