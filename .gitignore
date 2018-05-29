@@ -4,4 +4,3 @@
 checkpoint
 *.npy
 *.data*
-output*
