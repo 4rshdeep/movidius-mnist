@@ -21,4 +21,4 @@ Run the inference version of the code to save a session that is suitable for com
     mnist_inference.meta
     
 Compile the final saved network with the following command and if it all works you should see the mnist_inference.graph file created in the current directory. Note you pass in only the weights file prefix “mnist_inference” for the -w option for a TensorFlow™ network on the compile command line. The full command is below.
-`mvNCCompile mnist_inference.meta -s 12 -in input -on output -o mnist_inference.graph`
+```mvNCCompile mnist_inference.meta -s 12 -in input -on output -o mnist_inference.graph```
