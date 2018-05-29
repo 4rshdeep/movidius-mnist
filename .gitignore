@@ -1,0 +1,7 @@
+*.meta
+*graph
+*.index
+checkpoint
+*.npy
+*.data*
+output*
